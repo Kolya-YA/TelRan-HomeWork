@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Fintech</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__greeting">Hello, Rakib <span>👋</span></div>
+        <div class="header__search">
+            <input 
+                type="search"
+                name="header_search"
+                id="header_search"
+                placeholder="Search">
+        </div>
+        <div class="header__alert"></div>
+        <div class="header__user"></div>
+    </header>
+    <main class="main">
+        <div class="main__left">
+            <div class="info-block">
+                <div class="info-block__header">
+                    <h2>My Cards</h2>
+                    <span>Add new</span>
+                </div>
+                <div class="info-block__content">
+                    List of cards
+                </div>
+            </div>
+            <div class="info-block">
+                <div class="info-block__header">
+                    <h2>Transactions</h2>
+                    <span>Month</span>
+                </div>
+                <div class="info-block__content">
+                    List of transactions
+                </div>
+            </div>
+        </div>
+        <div class="main__right">
+            <div class="info-block">
+                <div class="info-block__chart-header">
+                    <div class="chart-radio chart-radio--direction">
+                        <input type="radio" name="chart_direction" id="chart_expenses" checked>
+                        <label for="chart_expenses">Expenses</label>
+                        <input type="radio" name="chart_direction" id="chart_income">
+                        <label for="chart_income">Income</label>
+                    </div>
+                    <div class="chart-radio chart-radio--time">
+                        <input type="radio" name="chart_time" id="chart_day">
+                        <label for="chart_day">D</label>
+                        <input type="radio" name="chart_time" id="chart_month">
+                        <label for="chart_month">M</label>
+                        <input type="radio" name="chart_time" id="chart_week">
+                        <label for="chart_week">W</label>
+                        <input type="radio" name="chart_time" id="chart_all" checked>
+                        <label for="chart_all">All</label>
+                    </div>
+                </div>
+                <div class="info-block__content">
+                    Chart placeholder
+                </div>
+            </div>
+            <div class="info-block">
+                <div class="info-block__header">
+                    <h2>History</h2>
+                    <span>See all</span>
+                </div>
+                <div class="info-block__content">
+                    List of events
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside class="navigation">
+        <h1>FiiNeo.io</h1>
+
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                    <a href="#" class="main-nav__link"><span></span>Dashboard</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link"><span></span>Statistic</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link"><span></span>My Wallet</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link"><span></span>Transfers</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link"><span></span>Message</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link"><span></span>Favorite</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link"><span></span>Profile</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="system-nav">
+            <ul class="system-nav__list">
+                <li class="system-nav__item">
+                    <a href="#" class="system-nav__link"><span></span>Support</a>
+                </li>
+                <li class="system-nav__item">
+                    <a href="#" class="system-nav__link"><span></span>Settings</a>
+                </li>
+                <li class="system-nav__item system-nav__item--active">
+                    <a href="#" class="system-nav__link"><span></span>Log out</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>
