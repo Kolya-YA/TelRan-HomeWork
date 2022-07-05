@@ -22,28 +22,96 @@
     </header>
     <main class="main">
         <div class="main__left">
-            <div class="info-block">
+            <section class="info-block">
                 <div class="info-block__header">
                     <h2>My Cards</h2>
                     <span>Add new</span>
                 </div>
                 <div class="info-block__content">
-                    List of cards
+                    <ul class="card-list">
+                        <li class="card-list__item card">
+                            <div class="card__logo">Visa</div>
+                            <div class="card__no">1230 4670 4670</div>
+                            <div class="card__cardholder">Rakib Kowshar</div>
+                            <div class="card__exp">03/25</div>
+                            <div class="card__logo2">))))</div>
+                        </li>
+                        <li class="card-item card card--green">
+                            <div class="card__logo">MC</div>
+                            <div class="card__no">4670 4670 1230</div>
+                            <div class="card__cardholder">Rakib Kowshar</div>
+                            <div class="card__exp">05/27</div>
+                            <div class="card__logo2">))))</div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="info-block">
+            </section>
+            <section class="info-block">
                 <div class="info-block__header">
                     <h2>Transactions</h2>
                     <span>Month</span>
                 </div>
                 <div class="info-block__content">
-                    List of transactions
+                    <li class="info-block__list-item list-item">
+                        <div class="list-item__icon"></div>
+                        <div class="list-item__text">
+                            <div class="list-item__name">Wedding video</div>
+                            <time class="list-item__date">Apr 06, 2021</time>
+                        </div>
+                        <div class="list-item__value">$3,000</div>
+                        <div class="list-item__btn">⋮</div>
+                    </li>
+                    <li class="info-block__list-item list-item">
+                        <div class="list-item__icon"></div>
+                        <div class="list-item__text">
+                            <div class="list-item__name">Passport verification</div>
+                            <time class="list-item__date">Apr 02, 2021</time>
+                        </div>
+                        <div class="list-item__value">$100</div>
+                        <div class="list-item__btn">⋮</div>
+                    </li>
+                    <li class="info-block__list-item list-item">
+                        <div class="list-item__icon"></div>
+                        <div class="list-item__text">
+                            <div class="list-item__name">RK's Photography</div>
+                            <time class="list-item__date">Mar 28, 2021</time>
+                        </div>
+                        <div class="list-item__value">$470</div>
+                        <div class="list-item__btn">⋮</div>
+                    </li>
+                    <li class="info-block__list-item list-item">
+                        <div class="list-item__icon"></div>
+                        <div class="list-item__text">
+                            <div class="list-item__name">Passport verification</div>
+                            <time class="list-item__date">Apr 02, 2021</time>
+                        </div>
+                        <div class="list-item__value">$100</div>
+                        <div class="list-item__btn">⋮</div>
+                    </li>
+                    <li class="info-block__list-item list-item">
+                        <div class="list-item__icon"></div>
+                        <div class="list-item__text">
+                            <div class="list-item__name">Grocery shop</div>
+                            <time class="list-item__date">Mar 24, 2021</time>
+                        </div>
+                        <div class="list-item__value">$186</div>
+                        <div class="list-item__btn">⋮</div>
+                    </li>
+                    <li class="info-block__list-item list-item">
+                        <div class="list-item__icon"></div>
+                        <div class="list-item__text">
+                            <div class="list-item__name">Flight Ticket</div>
+                            <time class="list-item__date">Mar 21, 2021</time>
+                        </div>
+                        <div class="list-item__value">$860</div>
+                        <div class="list-item__btn">⋮</div>
+                    </li>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="main__right">
-            <div class="info-block">
-                <div class="info-block__chart-header">
+            <section class="info-block">
+                <div class="info-block__header">
                     <div class="chart-radio chart-radio--direction">
                         <input type="radio" name="chart_direction" id="chart_expenses" checked>
                         <label for="chart_expenses">Expenses</label>
@@ -61,19 +129,52 @@
                         <label for="chart_all">All</label>
                     </div>
                 </div>
-                <div class="info-block__content">
+                <div class="info-block__content chart-placeholder">
                     Chart placeholder
                 </div>
-            </div>
-            <div class="info-block">
+            </section>
+            <section class="info-block">
                 <div class="info-block__header">
                     <h2>History</h2>
                     <span>See all</span>
                 </div>
                 <div class="info-block__content">
-                    List of events
+                    <ul class="info-block__list info-block__list--history">
+                        <li class="info-block__list-item list-item">
+                            <div class="list-item__icon"></div>
+                            <div class="list-item__text">
+                                <div class="list-item__name">Linkedin Pro</div>
+                                <time class="list-item__date">10 Mar 2021</time>
+                            </div>
+                            <div class="list-item__value"> -260.80</div>
+                        </li>
+                        <li class="info-block__list-item list-item">
+                            <div class="list-item__icon"></div>
+                            <div class="list-item__text">
+                                <div class="list-item__name">Figma plan</div>
+                                <time class="list-item__date">09 Mar 2021</time>
+                            </div>
+                            <div class="list-item__value"> -126.50</div>
+                        </li>
+                        <li class="info-block__list-item list-item">
+                            <div class="list-item__icon"></div>
+                            <div class="list-item__text">
+                                <div class="list-item__name">Instagram ads</div>
+                                <time class="list-item__date">08 Mar 2021</time>
+                            </div>
+                            <div class="list-item__value"> -108.40</div>
+                        </li>
+                        <li class="info-block__list-item list-item">
+                            <div class="list-item__icon"></div>
+                            <div class="list-item__text">
+                                <div class="list-item__name">Dribble Pro</div>
+                                <time class="list-item__date">08 Mar 2021</time>
+                            </div>
+                            <div class="list-item__value"> -108.40</div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
     <aside class="navigation">
