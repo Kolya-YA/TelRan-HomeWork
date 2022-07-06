@@ -5,7 +5,6 @@
     --grey-font-color: #6a6a6a;
     --main-bgc: #fefefe;
     --gray-bgc: #f7f7f7;
-    /* --gray-bgc: #ec9090; */
     --nav-width: 280px;
 }
 
@@ -18,6 +17,7 @@ html {
 }
 
 body {
+    max-width: 1280px;
     margin: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
