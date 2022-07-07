@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Fintech</title>
 </head>
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol viewBox="0 0 24 24" id="src-1"><path d="M22 7h1v10h-1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v3zm-2 10h-6a5 5 0 0 1 0-10h6V5H4v14h16v-2zm1-2V9h-7a3 3 0 0 0 0 6h7zm-7-4h3v2h-3v-2z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-4"><path d="M12 8H8.001L8 20H6V8H2l5-5 5 5zm10 8l-5 5-5-5h4V4h2v12h4z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 0 1 1.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.424 25.424 0 0 0-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.814 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.686 8.686 0 0 1 12 3.475zm-3.633.803a53.903 53.903 0 0 1 3.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 0 1 4.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 0 1-2.19-5.705zM12 20.547a8.482 8.482 0 0 1-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.309 35.309 0 0 1 1.823 6.475 8.4 8.4 0 0 1-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.66-6.084 2.68-.423 5.023.271 5.315.369a8.468 8.468 0 0 1-3.655 5.715z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-6"><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604c.881-.556 1.676-1.109 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5 5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903.745.592 1.54 1.145 2.421 1.7.299.189.595.37.934.572.339-.202.635-.383.934-.571z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-7"><path d="M5 11.1l2-2 5.5 5.5 3.5-3.5 3 3V5H5v6.1zm0 2.829V19h3.1l2.986-2.985L7 11.929l-2 2zM10.929 19H19v-2.071l-3-3L10.929 19zM4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm11.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-8"><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-9"><path d="M21 3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18zM11 13H4v6h7v-6zm9 0h-7v6h7v-6zm-9-8H4v6h7V5zm9 0h-7v6h7V5z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-10"><path d="M5 3v16h16v2H3V3h2zm15.293 3.293l1.414 1.414L16 13.414l-3-2.999-4.293 4.292-1.414-1.414L13 7.586l3 2.999 4.293-4.292z" fill="#000"/></symbol><symbol viewBox="0 0 24 24" id="src-11"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-12"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2a9.985 9.985 0 0 1 8 4h-2.71a8 8 0 1 0 .001 12h2.71A9.985 9.985 0 0 1 12 22zm7-6v-3h-8v-2h8V8l5 4-5 4z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-13"><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-15"><path d="M22 20H2v-2h1v-6.969C3 6.043 7.03 2 12 2s9 4.043 9 9.031V18h1v2zM5 18h14v-6.969C19 7.148 15.866 4 12 4s-7 3.148-7 7.031V18zm4.5 3h5a2.5 2.5 0 1 1-5 0z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-16"><path d="M15 3h6v5h-2V5h-4V3zM9 3v2H5v3H3V3h6zm6 18v-2h4v-3h2v5h-6zm-6 0H3v-5h2v3h4v2zM3 11h18v2H3v-2z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-17"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-5h2v2h-2v-2zm2-1.645V14h-2v-1.5a1 1 0 0 1 1-1 1.5 1.5 0 1 0-1.471-1.794l-1.962-.393A3.501 3.501 0 1 1 13 13.355z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-18"><path d="M3.34 17a10.018 10.018 0 0 1-.978-2.326 3 3 0 0 0 .002-5.347A9.99 9.99 0 0 1 4.865 4.99a3 3 0 0 0 4.631-2.674 9.99 9.99 0 0 1 5.007.002 3 3 0 0 0 4.632 2.672c.579.59 1.093 1.261 1.525 2.01.433.749.757 1.53.978 2.326a3 3 0 0 0-.002 5.347 9.99 9.99 0 0 1-2.501 4.337 3 3 0 0 0-4.631 2.674 9.99 9.99 0 0 1-5.007-.002 3 3 0 0 0-4.632-2.672A10.018 10.018 0 0 1 3.34 17zm5.66.196a4.993 4.993 0 0 1 2.25 2.77c.499.047 1 .048 1.499.001A4.993 4.993 0 0 1 15 17.197a4.993 4.993 0 0 1 3.525-.565c.29-.408.54-.843.748-1.298A4.993 4.993 0 0 1 18 12c0-1.26.47-2.437 1.273-3.334a8.126 8.126 0 0 0-.75-1.298A4.993 4.993 0 0 1 15 6.804a4.993 4.993 0 0 1-2.25-2.77c-.499-.047-1-.048-1.499-.001A4.993 4.993 0 0 1 9 6.803a4.993 4.993 0 0 1-3.525.565 7.99 7.99 0 0 0-.748 1.298A4.993 4.993 0 0 1 6 12c0 1.26-.47 2.437-1.273 3.334a8.126 8.126 0 0 0 .75 1.298A4.993 4.993 0 0 1 9 17.196zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-19"><path d="M4 16V4H2V2h3a1 1 0 0 1 1 1v12h12.438l2-8H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1zm2 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-20"><path d="M20 22h-2v-2a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v2H4v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2zm-8-9a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="src-21"><path d="M17 9.2l5.213-3.65a.5.5 0 0 1 .787.41v12.08a.5.5 0 0 1-.787.41L17 14.8V19a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4.2zm0 3.159l4 2.8V8.84l-4 2.8v.718zM3 6v12h12V6H3zm2 2h2v2H5V8z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="mcard"><path d="M12 18.294a7.3 7.3 0 1 1 0-12.588 7.3 7.3 0 1 1 0 12.588zm1.702-1.384a5.3 5.3 0 1 0 0-9.82A7.273 7.273 0 0 1 15.6 12c0 1.89-.719 3.614-1.898 4.91zm-3.404-9.82a5.3 5.3 0 1 0 0 9.82A7.273 7.273 0 0 1 8.4 12c0-1.89.719-3.614 1.898-4.91zM12 8.205A5.284 5.284 0 0 0 10.4 12c0 1.488.613 2.832 1.6 3.795A5.284 5.284 0 0 0 13.6 12 5.284 5.284 0 0 0 12 8.205z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 24 24" id="visa"><path d="M22.222 15.768l-.225-1.125h-2.514l-.4 1.117-2.015.004a4199.19 4199.19 0 0 1 2.884-6.918c.164-.391.455-.59.884-.588.328.003.863.003 1.606.001L24 15.765l-1.778.003zm-2.173-2.666h1.62l-.605-2.82-1.015 2.82zM7.06 8.257l2.026.002-3.132 7.51-2.051-.002a950.849 950.849 0 0 1-1.528-5.956c-.1-.396-.298-.673-.679-.804C1.357 8.89.792 8.71 0 8.465V8.26h3.237c.56 0 .887.271.992.827.106.557.372 1.975.8 4.254L7.06 8.257zm4.81.002l-1.602 7.508-1.928-.002L9.94 8.257l1.93.002zm3.91-.139c.577 0 1.304.18 1.722.345l-.338 1.557c-.378-.152-1-.357-1.523-.35-.76.013-1.23.332-1.23.638 0 .498.816.749 1.656 1.293.959.62 1.085 1.177 1.073 1.782-.013 1.256-1.073 2.495-3.309 2.495-1.02-.015-1.388-.101-2.22-.396l.352-1.625c.847.355 1.206.468 1.93.468.663 0 1.232-.268 1.237-.735.004-.332-.2-.497-.944-.907-.744-.411-1.788-.98-1.774-2.122.017-1.462 1.402-2.443 3.369-2.443z" fill="#000"/></symbol>
+        <symbol viewBox="0 0 205.08507 238.04591" id="figma"><path d="M186.6,94A42,42,0,0,0,162,18H94A42,42,0,0,0,69.4,94a41.9,41.9,0,0,0,0,68A42,42,0,1,0,136,196V160.9A42,42,0,1,0,186.6,94ZM188,60a26.1,26.1,0,0,1-26,26H136V34h26A26.1,26.1,0,0,1,188,60ZM68,60A26.1,26.1,0,0,1,94,34h26V86H94A26.1,26.1,0,0,1,68,60Zm0,68a26.1,26.1,0,0,1,26-26h26v52H94A26.1,26.1,0,0,1,68,128Zm26,94a26,26,0,0,1,0-52h26v26A26.1,26.1,0,0,1,94,222Zm68-68a26,26,0,0,1,0-52h0a26,26,0,0,1,0,52Z"/></symbol>
+        <symbol viewBox="0 0 41.69873 52.999985" id="contactless"><path fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" d="m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5 0 0,1 0,28.5M3,19a18,17 0 0,1 0,18"/></symbol>
+    </svg>
     <header class="header">
         <div class="header__greeting">Hello, Rakib <span>👋</span></div>
         <div class="header__search">
@@ -17,7 +40,9 @@
                 id="header_search"
                 placeholder="Search">
         </div>
-        <div class="header__alert"></div>
+        <div class="header__alert">
+            <svg class="icon"><use xlink:href="#src-15"></use></svg>
+        </div>
         <div class="header__user"></div>
     </header>
     <main class="main">
@@ -30,18 +55,26 @@
                 <div class="info-block__content">
                     <ul class="card-list">
                         <li class="card-list__item card">
-                            <div class="card__logo">Visa</div>
+                            <div class="card__logo">
+                                <svg class="icon icon--logo"><use xlink:href="#visa"></use></svg>
+                            </div>
                             <div class="card__no">1230 4670 4670</div>
                             <div class="card__cardholder">Rakib Kowshar</div>
                             <div class="card__exp">03/25</div>
-                            <div class="card__logo2">))))</div>
+                            <div class="card__logo2">
+                                <svg class="icon"><use xlink:href="#contactless"></use></svg>
+                            </div>
                         </li>
                         <li class="card-item card card--green">
-                            <div class="card__logo">MC</div>
+                            <div class="card__logo">
+                                <svg class="icon icon--logo"><use xlink:href="#mcard"></use></svg>
+                            </div>
                             <div class="card__no">4670 4670 1230</div>
                             <div class="card__cardholder">Rakib Kowshar</div>
                             <div class="card__exp">05/27</div>
-                            <div class="card__logo2">))))</div>
+                            <div class="card__logo2">
+                                <svg class="icon"><use xlink:href="#contactless"></use></svg>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -183,25 +216,40 @@
         <nav class="main-nav">
             <ul class="main-nav__list">
                 <li class="main-nav__item main-nav__item--active">
-                    <a href="#" class="main-nav__link"><span></span>Dashboard</a>
+                    <a href="#" class="main-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-9"></use></svg>
+                    </span>Dashboard</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link"><span></span>Statistic</a>
+                    <a href="#" class="main-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-10"></use></svg>
+                    </span>Statistic</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link"><span></span>My Wallet</a>
+                    <a href="#" class="main-nav__link">
+                        <span>
+                            <svg class="icon"><use xlink:href="#src-1"></use></svg>                           
+                        </span>My Wallet</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link"><span></span>Transfers</a>
+                    <a href="#" class="main-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-4"></use></svg>
+                    </span>Transfers</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link"><span></span>Message</a>
+                    <a href="#" class="main-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-13"></use></svg>
+                    </span>Message</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link"><span></span>Favorite</a>
+                    <a href="#" class="main-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-6"></use></svg>
+                    </span>Favorite</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link"><span></span>Profile</a>
+                    <a href="#" class="main-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-20"></use></svg>
+                    </span>Profile</a>
                 </li>
             </ul>
         </nav>
@@ -209,13 +257,19 @@
         <nav class="system-nav">
             <ul class="system-nav__list">
                 <li class="system-nav__item">
-                    <a href="#" class="system-nav__link"><span></span>Support</a>
+                    <a href="#" class="system-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-17"></use></svg>
+                    </span>Support</a>
                 </li>
                 <li class="system-nav__item">
-                    <a href="#" class="system-nav__link"><span></span>Settings</a>
+                    <a href="#" class="system-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-18"></use></svg>
+                    </span>Settings</a>
                 </li>
                 <li class="system-nav__item system-nav__item--active">
-                    <a href="#" class="system-nav__link"><span></span>Log out</a>
+                    <a href="#" class="system-nav__link"><span>
+                        <svg class="icon"><use xlink:href="#src-12"></use></svg>
+                    </span>Log out</a>
                 </li>
             </ul>
         </nav>

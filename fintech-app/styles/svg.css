@@ -1,0 +1,35 @@
+.main-nav .icon {
+    width: 22px;
+    height: 22px;
+    fill: var(--gray-bgc);
+}
+
+.system-nav .icon {
+    width: 22px;
+    height: 22px;
+}
+
+.header__alert .icon {
+    width: 28px;
+    height: 28px;
+}
+
+.card .icon {
+    width: 22px;
+    height: 22px;
+}
+
+.card .icon--logo {
+    width: 34px;
+    height: 34px;
+    fill: var(--gray-bgc);
+}
+
+path {
+    /* stroke: inherit; */
+    fill: inherit
+}
+
+#contactless path {
+    fill: none;
+}
