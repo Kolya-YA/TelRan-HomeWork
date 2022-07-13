@@ -8,7 +8,7 @@
     --bgc-white: #ffffff;
     --bgc-main: #2d273d;
     --block-size: 420px;
-    --wrapper-size: calc(var(var(--block-size)) * 3)
+    --wrapper-size: calc(var(--block-size) * 3)
 }
 
 body {
@@ -20,6 +20,7 @@ body {
 }
 
 .wrapper {
+    margin: 0 auto;
     max-width: var(--wrapper-size);
     display: grid;
     justify-content: center;
