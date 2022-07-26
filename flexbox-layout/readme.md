@@ -6,6 +6,6 @@
 
 - Flexbox
 
-[Preview on GitPages](https://kolya-ya.github.io/telran-flexbox-hw/)
+[Preview on GitPages](https://kolya-ya.github.io/TelRan-HomeWork/flexbox-layout)
 
 ![Preview screenshot](flexbox-hw.png)
