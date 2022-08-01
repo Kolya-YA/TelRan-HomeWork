@@ -1,0 +1,51 @@
+:root {
+    --light-bg: #ffffff;
+    --dark-bg: #f9f9f9;
+    --blue-bg: #f9faff;
+    --icon-bg: #edf0f6;
+    --accent-violet: #52459f;
+    --border-color: #ecedef;
+    --block-border: solid 2px var(--border-color);
+    --block-bg-violet: rgb(216, 214, 236);
+    --block-bg-yellow: #fdedd4;
+    --block-bg-rose: #fde4f9;
+    --block-bg-ocean: #b5e0e9;
+    --block-bg-orange: #f8896b;
+    --bg-lighter: 60%;
+    --nav-color: #7986a6;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.content__row {
+    display: flex;
+}
+
+.content__first {
+    flex: 2 1 200px;
+    display: flex;
+}
+
+.content__second {
+    flex: 1 1 200px;
+    background-color: var(--blue-bg);
+    border-left: var(--block-border);
+    display: flex;
+}
