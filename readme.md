@@ -4,4 +4,4 @@
 
 One folder — one work
 
-[Index pages on Preview on GitPages](https://kolya-ya.github.io/TelRan-HomeWork/)
+[Index page for Preview on GitPages](https://kolya-ya.github.io/TelRan-HomeWork/)
