@@ -1,0 +1,58 @@
+body {    
+    min-height: 100vh;
+    background-color: #999;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 10px;
+    height: clamp(200px, 60vh, 400px);
+    width: clamp(200px, 80vw, 600px);
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "a b d"
+        "e c c"
+        "f c c";
+}
+
+.block {
+    background-color: lightgray;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.block__a {
+    grid-area: a;
+    background-color: lightgreen;
+}
+
+.block__b {
+    grid-area: b;
+    background-color: burlywood;
+}
+
+.block__c {
+    grid-area: c;
+    background-color: green;
+}
+
+.block__d {
+    grid-area: d;
+    background-color: blueviolet;
+}
+
+.block__e {
+    grid-area: e;
+    background-color: lightcoral;
+}
+
+.block__f {
+    grid-area: f;
+    background-color: aqua;
+}

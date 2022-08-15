@@ -1,0 +1,31 @@
+body {    
+    min-height: 100vh;
+    background-color: #999;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 10px;
+    height: clamp(200px, 60vh, 400px);
+    width: clamp(200px, 80vw, 600px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 10px;
+}
+
+.block {
+    background-color: lightseagreen;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.block--wide {
+    grid-column: 1 / 3;
+    background-color: lightcoral;
+}
