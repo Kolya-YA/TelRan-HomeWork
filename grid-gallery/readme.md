@@ -1,4 +1,6 @@
-# Grid layout gallery
+# Grid layout gallery 
+
+*(with CSS filters)*
 
 ## Tel-Ran — basic frontend homework (HTML/CSS)
 
